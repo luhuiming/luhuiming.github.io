@@ -78,6 +78,32 @@
         
 
         
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '785019a81d97f4697387',
+    clientSecret: 'c0c9af243cc688f84e7e6ab24f114afec7cf6a1b',
+    repo: 'luhuiming.github.io',
+    owner: 'luhuiming',
+    admin: ['luhuiming'],
+    id: location.pathname,      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
     
         <div class="site-footer">
   Powered by Hve Notes
